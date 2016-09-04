@@ -1,2 +1,2 @@
-# C++_noob
+# Cpp-Noob
 Learn C++
