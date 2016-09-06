@@ -7,8 +7,8 @@ int main()
     int i;
     double d;
     
-    int& r = i
-    double&s = d;
+    int& r = i;    /* Reference of i */
+    double&s = d;  /* Reference of d */
     
     i = 5;
     cout << "Value of i : " << i << endl;
@@ -20,3 +20,11 @@ int main()
     
     return 0;
 }
+
+/* 运行结果 */
+/*
+Value of i : 5
+Value of i reference : 5
+Value of d : 11.5
+Value of d reference : 11.5
+*/
