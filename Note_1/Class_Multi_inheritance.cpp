@@ -26,10 +26,10 @@ class smartphone : public phone, public computer{
     protected:
         int price;
     public:
-	    smartphone(char* num, char* cpu, int p)
+	      smartphone(char* num, char* cpu, int p)
         {
-			Number = num;
-			Cpu = cpu;
+            Number = num;
+            Cpu = cpu;
             price = p;
         }
         void getInfo(void)
@@ -47,3 +47,10 @@ int main()
     
     return 0;
 }
+
+/* 运行结果 */
+/*
+Number is 13999999999
+Cpu is A8
+Price is 5888
+*/
