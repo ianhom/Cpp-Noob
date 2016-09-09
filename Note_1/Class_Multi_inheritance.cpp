@@ -3,9 +3,12 @@
 using namespace std;
 
 class phone{
-    protected:
-        char *Number;
     public:
+        char *Number;
+        phone(char *num)
+        {
+            Number = num;	
+        }
         char* getNum()
         {
             return Number;
@@ -13,9 +16,12 @@ class phone{
 };
 
 class computer{
-    protected:
-        char *Cpu;
     public:
+        char *Cpu;
+        computer(char *cpu)
+        {
+            Cpu = cpu;
+        }
         char* getCpu()
         {
             return Cpu;
@@ -26,10 +32,8 @@ class smartphone : public phone, public computer{
     protected:
         int price;
     public:
-	      smartphone(char* num, char* cpu, int p)
+	smartphone(char* num, char* cpu, int p):phone(num),computer(cpu)
         {
-            Number = num;
-            Cpu = cpu;
             price = p;
         }
         void getInfo(void)
@@ -50,7 +54,7 @@ int main()
 
 /* 运行结果 */
 /*
-Number is 13999999999
-Cpu is A8
+Number is 13913913999
+Cpu is Cortex A9
 Price is 5888
 */
